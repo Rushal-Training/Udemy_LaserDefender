@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2869039539835252530}
   - component: {fileID: 5976239897873950817}
   m_Layer: 0
-  m_Name: Player Laser
+  m_Name: Enemy Laser
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16e77ee0b6ebcd64f8163cc7cd976033, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: efcbeb357b4a56b4899eef5548bdcfd1, type: 3}
+  m_Color: {r: 1, g: 0.59180856, b: 0.051886797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.09, y: 0.37}
+    oldSize: {x: 0.13, y: 0.37}
     newSize: {x: 0.09, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
