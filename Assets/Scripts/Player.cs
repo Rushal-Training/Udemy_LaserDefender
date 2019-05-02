@@ -24,7 +24,9 @@ public class Player : MonoBehaviour
 	bool isFiring = false;
 	float xMin, xMax, yMin, yMax;
 
-    void Start()
+	public int Health { get => health; }
+
+	void Start()
     {
 		SetupMoveBoundaries();
     }
@@ -57,6 +59,7 @@ public class Player : MonoBehaviour
 
 	private void Die()
 	{
+		FindObjectOfType<Level>().LoadGameOver();
 		Destroy( gameObject );
 		AudioSource.PlayClipAtPoint( deathSFX, Camera.main.transform.position, deathVolume );
 	}

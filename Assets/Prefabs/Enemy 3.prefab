@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3685332425781277406}
   - component: {fileID: 3685332425781277407}
   - component: {fileID: 6606241865907118778}
-  - component: {fileID: 6103287206863977549}
-  - component: {fileID: 1359149447067360249}
-  - component: {fileID: 1532478783954273035}
-  - component: {fileID: 2077718902028454138}
+  - component: {fileID: 5762023044555521758}
+  - component: {fileID: 66560467}
+  - component: {fileID: 7948473897863568613}
+  - component: {fileID: 4022339584000417177}
   m_Layer: 9
-  m_Name: Enemy 1
+  m_Name: Enemy 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ae980f477e4c075488e09dc3e249a28c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae7ac9542e40437498e916b0667abbd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25a16d24e8838748b7cf0103c2aff30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6103287206863977549
+--- !u!114 &5762023044555521758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,20 +108,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1077de1e942e24689212ad37b5f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 5690748925041142270, guid: 65b3150c6baf807468760c97459a97bf,
+  laserPrefab: {fileID: 5690748925041142270, guid: f08a12540bada1a42b59a32a3ca9ea03,
     type: 3}
-  projectileSpeed: 10
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 0.4
-  health: 100
-  scoreValue: 150
+  projectileSpeed: 5
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 2
+  health: 1000
+  scoreValue: 325
   deathVFX: {fileID: 215081469847544391, guid: e898570097e940d4fb94e2175428bc04, type: 3}
   durationOfExplosion: 1
   deathSFX: {fileID: 8300000, guid: 3f6a3326d66126044928fe2b4bcd09ca, type: 3}
   deathVolume: 0.75
-  laserSFX: {fileID: 8300000, guid: a29d9c8f113cfa04fa4277e8d5235d2f, type: 3}
+  laserSFX: {fileID: 8300000, guid: be0431ad7954d9c48a46665e1c06ca06, type: 3}
   laserVolume: 0.1
---- !u!58 &1359149447067360249
+--- !u!58 &66560467
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,10 +134,10 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0037389994, y: -0.011216998}
+  m_Offset: {x: -0.00667423, y: 0}
   serializedVersion: 2
-  m_Radius: 0.39661354
---- !u!50 &1532478783954273035
+  m_Radius: 0.7959824
+--- !u!50 &7948473897863568613
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2077718902028454138
+--- !u!114 &4022339584000417177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
