@@ -100,6 +100,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileFiringPeriod: 0.1
+  deathSFX: {fileID: 8300000, guid: 3f6a3326d66126044928fe2b4bcd09ca, type: 3}
+  laserSFX: {fileID: 8300000, guid: b752a59ad8ac74f4081615ca55cb81c3, type: 3}
 --- !u!60 &3283151822909445770
 PolygonCollider2D:
   m_ObjectHideFlags: 0
